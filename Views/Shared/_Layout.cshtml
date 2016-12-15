@@ -17,8 +17,10 @@
     </environment>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <div class="container">
+        <img src="~/images/logo1.jpg" alt="NJ King's Logo" />
+        </div>
+    <div class="navbar navbar-inverse">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -34,8 +36,12 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
+                <form role="search" class="navbar-form navbar-right">
+					<div class="form-group">
+						<input type="text" placeholder="Search" class="form-control">
+					</div>
+				</form>
             </div>
-        </div>
     </div>
     <div class="container body-content">
         @RenderBody()
